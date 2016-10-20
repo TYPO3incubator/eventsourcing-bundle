@@ -1,0 +1,10 @@
+### Composer template
+composer.phar
+/vendor/
+
+### JetBrains template
+.idea/
+
+
+### Document Root folder
+/www/
