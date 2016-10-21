@@ -14,6 +14,10 @@
       },
       {
           "type": "vcs",
+          "url": "git@github.com:TYPO3Incubator/TYPO3.CMS.git"
+      },
+      {
+          "type": "vcs",
           "url": "git@github.com:TYPO3Incubator/data_handling.git"
       },
       {
@@ -22,12 +26,13 @@
       }
     ],
     "require": {
-        "typo3/cms": "dev-master as 8.4.*-dev",
+        "typo3/cms": "dev-eventsourcing as 8.4.*-dev",
         "typo3-ter/introduction": "^2.3",
         "bk2k/bootstrap-package": "dev-master",
         "typo3/cms-data-handling": "dev-master",
         "h4ck3r31/bank-account-example": "dev-master",
-        "league/tactician": "^1.0"
+        "league/tactician": "^1.0",
+        "helhum/typo3-console": "^3.4"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.4",
