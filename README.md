@@ -38,3 +38,8 @@ Open the Install Tool and
 In addition you can enable the `bank_account_example`, create a new page
 and put the accordant frontend pluging for the bank account example on
 that page.
+
+## Infrastructure
+
+* events are stored in the MySQL table `sys_event_store`
+* additional SQLite databases are created in `typo3temp/var/LocalStorage/`
