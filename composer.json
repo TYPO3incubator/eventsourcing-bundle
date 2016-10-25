@@ -25,6 +25,7 @@
           "url": "git@github.com:TYPO3Incubator/bank_account_example.git"
       }
     ],
+    "minimum-stability": "dev",
     "require": {
         "typo3/cms": "dev-eventsourcing as 8.4.*-dev",
         "typo3-ter/introduction": "^2.3",
