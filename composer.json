@@ -29,14 +29,13 @@
           "url": "git@github.com:TYPO3Incubator/bank_account_example.git"
       }
     ],
-    "minimum-stability": "dev",
     "require": {
         "typo3/cms": "dev-eventsourcing as 8.4.*-dev",
         "typo3-ter/introduction": "^2.3",
         "bk2k/bootstrap-package": "dev-master",
-        "typo3/cms-event-sourcing": "dev-master",
-        "typo3/cms-data-handling": "dev-master",
-        "h4ck3r31/bank-account-example": "dev-master",
+        "typo3/cms-event-sourcing": "^0.2.3",
+        "typo3/cms-data-handling": "^0.2.2",
+        "h4ck3r31/bank-account-example": "^0.2.2",
         "helhum/typo3-console": "^3.4"
     },
     "require-dev": {
