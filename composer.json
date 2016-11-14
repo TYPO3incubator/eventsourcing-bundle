@@ -18,6 +18,10 @@
       },
       {
           "type": "vcs",
+          "url": "git@github.com:TYPO3Incubator/event_sourcing.git"
+      },
+      {
+          "type": "vcs",
           "url": "git@github.com:TYPO3Incubator/data_handling.git"
       },
       {
@@ -30,6 +34,7 @@
         "typo3/cms": "dev-eventsourcing as 8.4.*-dev",
         "typo3-ter/introduction": "^2.3",
         "bk2k/bootstrap-package": "dev-master",
+        "typo3/cms-event-sourcing": "dev-master",
         "typo3/cms-data-handling": "dev-master",
         "h4ck3r31/bank-account-example": "dev-master",
         "helhum/typo3-console": "^3.4"

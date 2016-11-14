@@ -17,8 +17,8 @@ composer install
 ### Install TYPO3 & extensions
 
 A new TYPO3 instance is being installed using the TYPO3 console.
-Besides that the extensions version, workspaces, bootstrap_package,
-introduction and data_handling are installed
+Besides that the extensions `version`, `workspaces`, `bootstrap_package`,
+`introduction`, `event_sourcing` and `data_handling` are installed
 
 ```
 ./install.sh
