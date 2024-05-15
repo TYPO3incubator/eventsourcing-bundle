@@ -9,14 +9,6 @@
     ],
     "repositories": [
       {
-          "type": "composer",
-          "url": "https://composer.typo3.org/"
-      },
-      {
-          "type": "vcs",
-          "url": "git@github.com:TYPO3Incubator/TYPO3.CMS.git"
-      },
-      {
           "type": "vcs",
           "url": "git@github.com:TYPO3Incubator/event_sourcing.git"
       },
@@ -30,27 +22,57 @@
       }
     ],
     "require": {
-        "typo3/cms": "dev-eventsourcing as 8.4.*-dev",
-        "typo3-ter/introduction": "^2.3",
-        "bk2k/bootstrap-package": "dev-master",
-        "typo3/cms-event-sourcing": "^0.2.3",
-        "typo3/cms-data-handling": "^0.2.2",
+        "php": "^7.2",
+        "typo3/cms-core": "^8.7",
+        "typo3/cms-about": "^8.7",
+        "typo3/cms-backend": "^8.7",
+        "typo3/cms-belog": "^8.7",
+        "typo3/cms-beuser": "^8.7",
+        "typo3/cms-extbase": "^8.7",
+        "typo3/cms-extensionmanager": "^8.7",
+        "typo3/cms-filelist": "^8.7",
+        "typo3/cms-fluid": "^8.7",
+        "typo3/cms-fluid-styled-content": "^8.7",
+        "typo3/cms-form": "^8.7",
+        "typo3/cms-frontend": "^8.7",
+        "typo3/cms-impexp": "^8.7",
+        "typo3/cms-info": "^8.7",
+        "typo3/cms-install": "^8.7",
+        "typo3/cms-lowlevel": "^8.7",
+        "typo3/cms-opendocs": "^8.7",
+        "typo3/cms-recordlist": "^8.7",
+        "typo3/cms-recycler": "^8.7",
+        "typo3/cms-reports": "^8.7",
+        "typo3/cms-rte-ckeditor": "^8.7",
+        "typo3/cms-scheduler": "^8.7",
+        "typo3/cms-setup": "^8.7",
+        "typo3/cms-tstemplate": "^8.7",
+        "typo3/cms-viewpage": "^8.7",
+        "typo3/cms-introduction": "^3.0",
+        "typo3/cms-event-sourcing": "^0.2.4",
+        "typo3/cms-data-handling": "^0.2.4",
         "h4ck3r31/bank-account-example": "^0.2.2",
-        "helhum/typo3-console": "^3.4"
+        "helhum/typo3-console": "^5.8",
+        "typo3/cms-workspaces": "^8.7"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.4",
-        "mikey179/vfsStream": "~1.6.0"
+        "mikey179/vfsstream": "~1.6.0"
     },
     "autoload-dev": {
         "psr-4": {
-            "TYPO3\\CMS\\Core\\Tests\\": "www/typo3/sysext/core/Tests/"
+            "TYPO3\\CMS\\Core\\Tests\\": "public/typo3/sysext/core/Tests/"
         }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "typo3cms extension:setupactive"
+        ]
     },
     "extra": {
         "typo3/cms": {
           "cms-package-dir": "{$vendor-dir}/typo3/cms",
-          "web-dir": "www"
+          "web-dir": "public"
         }
     }
 }
